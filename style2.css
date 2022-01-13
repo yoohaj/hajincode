@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*font-family: 'Island Moments', cursive;*/
+
+*{padding:0; margin:0;font-family: 'Noto Sans KR', sans-serif;}
+li{list-style:none;}
+a{text-decoration: none; color:inherit;}
+img{display: block; max-width: 100%;}
+body{font-size: 14px; color:#333; }
+
+/*header*/
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 0 15px #333;
+    position: relative;/*로고,icon정렬을 위해*/
+    text-align: center;/*메뉴를 중앙에 두기위해*/
+    z-index: 999;
+}
+
+header>a{
+    width: 15%;
+    height: 23px;
+    display: block;
+    position: absolute;
+    left:100px;
+    top:50%;
+    margin-top:-11.5px;
+}
+
+header ul{
+    display: inline-block;/*글자로 변환*/
+    overflow:hidden;
+}
+header li{
+    float:left;
+    margin:0 20px;
+    line-height:70px;
+    font-weight: 700;
+}
+
+.icon{
+    position: absolute;
+    right:100px;
+    top:50%;
+    height:16px;
+    margin-top:-8px;
+}
+.icon a{
+    float:left;
+    margin-left:30px;
+}
+
+/*fixbn*/
+#fixbn{
+    width: 21%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    text-align: center;
+    border-right: 1px solid #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+#fixbn>video{
+    /*글자의 성격 - inline*/
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#fixbn h2{
+    font-size: 30px;
+    font-weight: 900;
+    color:rgb(0, 173, 92);
+    font-family: 'Island Moments', cursive;
+}
+
+#fixbn>p{
+    text-decoration: underline;
+    margin-top:15px;
+}
+
+/*contents*/
+#contents{
+    width: 79%;
+    height: 100%;
+    overflow:hidden;
+    position: relative;
+    float:right;
+}
+
+#contents>h1{
+    text-align: center;
+    margin:100px 0;
+    overflow: hidden;
+    font-family: 'Island Moments', cursive;
+}
+
+.main{
+    width: 90%;
+    overflow: hidden;
+    position: relative;/*안쪽의 겹치는 요소를 표현하기 위해 부모기준*/
+    margin:auto;
+    margin-top:100px;
+    background-color: lemonchiffon;
+}
+.main img{
+    float:right;
+}
+.text{
+    width: 60%;
+    position: absolute;
+    top:150px;
+    left:0;
+}
+.text p{
+    font-size: 250px;
+    font-family: 'Island Moments', cursive;
+    font-style: italic;
+    border-bottom: 2px solid #333;
+}
+.text p::first-letter{
+    font-size: 270px;
+}
+
+.text span{
+    display: block;
+    font-size: 18px;
+    font-weight: 200px;
+    margin-top:100px
+}
+/*section*/
+section{
+    width: 90%;
+    overflow: hidden;
+    margin:auto;
+}
+
+.box{
+    width: 33.3%;
+    overflow: hidden;
+    float:left;
+}
+.box:nth-child(2){
+    border-right: 1px solid #ccc;
+    border-left:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.con{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.con a{
+    display: inline-block;
+    padding: 30px 0;
+    text-decoration: underline;
+    font-size:18px;
+    font-weight: 700;
+}
+
+.con p{
+    color:#ccc;
+}
+
+button{
+    width: 130px;
+    height: 50px;
+    border:2px solid rgb(206, 38, 38);
+    display: block;
+    margin:50px auto;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+footer{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+
+.inner{
+    width: 73%;
+    overflow: hidden;
+    margin: auto;
+}
+.inner>a{
+    float:left;
+}
+
+.copy{
+    float:left;
+    color:#fff;
+    margin-left:40px;
+}
+
+@media screen and (max-width:1400px) {
+
+
+    header ul{
+        display: none;/*메뉴제거*/
+    }
+
+    header>a{
+        width: 24%;
+    }
+
+    #fixbn{
+        position: static;/*원래의 박스로 성격을 변환*/
+        width: 100%;
+        border-right: 0;
+        padding:50px 0;
+        background-color: cadetblue;
+    }
+
+    #fixbn>video{
+        width: 50%;
+        margin:50px auto;
+    }
+
+    #fixbn>h2{
+        color:rgb(221, 171, 195);
+    }
+
+    #contents{
+        width: 100%;
+        float:none;
+    }
+
+    .text{
+        position: static;
+        width: 100%;
+        margin-top:80px;
+    }
+
+    .text p{
+        font-size: 80px;
+    }
+    .text p::first-letter{
+        font-size: 100px;
+    }
+
+    .text span{
+        margin-top:50px;
+    }
+    .inner{
+        width: 100%;
+        text-align: center;
+    }
+    .inner>a{
+        float:none;
+        width: 200px;
+        display: block;
+        margin:auto;
+    }
+    .copy{
+        width: 60%;
+        float:none;
+        margin:30px auto;
+    }
+}

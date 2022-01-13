@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{padding:0; margin:0;}
+li{list-style: none;}
+a{text-decoration: none; color:inherit;}
+body{font-size: 14px;}
+img{display: block; max-width: 100%; font-family: 'Playfair Display', serif;}
+
+#top{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-bottom:1px solid #000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.344);
+    box-sizing: border-box;
+    
+}
+
+#top ul{
+    text-align: center;
+}
+#top li{
+    display: inline-block;
+    margin:10px 20px;
+    font-weight: 700;
+}
+
+#top>a{
+    display: block;
+    position:absolute;
+    top:15%;
+    left:5%;
+}
+
+.icon{
+    position: absolute;
+    top:0%;
+    right: 5%;
+}
+.icon img{
+    float:left;
+    margin:10px 20px; 
+}
+
+main{
+    overflow: hidden;
+}
+
+.left{
+    width: 21%;
+    height: 100%;
+    float:left;
+    position: fixed;
+    position: relative;
+}
+
+.left video{
+    width: 80%;
+    height: 50%;
+    margin:100px auto;
+    display: block;
+   
+}
+
+.tbox{
+    text-align: center;
+    margin: 30px auto;
+    
+}
+
+.tbox>h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:rgb(15, 143, 73);
+    font-family: 'Oranienbaum', serif;
+}
+.tbox u{
+    color: rgb(96, 93, 93);
+}
+
+.right{
+    float:right;
+    width: 79%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-left:1px solid #333;
+    box-sizing: border-box;
+}
+
+.right h2{
+    font-family: 'Oranienbaum', serif;
+    font-size: 30px;
+    margin: 50px;
+
+}
+
+.rtop{
+    width: 90%;
+    overflow: hidden;
+    background-image: url(images/bg.jpg);
+    margin: 0 auto;
+    margin-top:80px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    
+    
+
+    
+}
+
+.rtbox{
+    display: block;
+    height: 180px;
+    width: 60%;
+    margin-top: 150px;
+    font-size:80px;
+    line-height: 150px;
+    font-style: italic;
+    border-bottom: 2px solid #333;
+    color:#333;
+}
+
+.rtop span{
+    display: block;
+    font-size: 18px;
+    color:rgb(174, 168, 168);
+    margin: 100px 0;
+    margin-bottom: 180px;
+   
+}
+
+
+section{
+    width: 90%;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.con{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.con:nth-child(2){
+    border:1px solid #333;
+    border-top:none;
+    border-bottom: none;
+}
+.bn{
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.bn u{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px auto;
+}
+.bn span{
+    color:rgb(182, 178, 178);
+}
+
+button{
+    width: 120px;
+    height: 50px;
+    border:none;
+    background-color: inherit;
+    margin:30px auto;
+}
+
+footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+.fbox{
+    width: 73%;
+    overflow: hidden;
+    margin: 100px auto;
+}
+.fbox img{
+    float: left;
+    margin-right: 30px;
+
+}
+.ftbox{
+    float: left;
+    color:#fff;
+}
+
+@media screen and (max-width:1400px){
+    #top{
+        width: 100%;
+        height: 40px;
+    }
+
+    #top ul{
+       display: none;
+    }
+
+    .left{
+        width: 100%;
+        background-color: rgb(120, 152, 154);
+        float:none;
+        padding: 30px 0;
+    }
+
+    .left video{
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .tbox{
+        margin: 30px auto;
+    }
+
+    .tbox u{
+        color:#333;
+    }
+
+    .tbox>h2{
+        color:rgb(215, 154, 215);
+    }
+
+    .right{
+        width: 100%;
+        float:none;
+        border:none;
+    }
+
+    .rtop{
+        width: 90%;
+        background-size: 55%;
+        
+    }
+
+    .rtbox{
+        margin: 0;
+        width: 100%;
+        font-size:40px;
+    }
+
+    .rtop span{
+        margin: 30px auto;
+        color:rgb(116, 111, 111);
+    }
+  
+
+    .text{
+        margin-top: 50%;
+        width: 100%;
+        overflow: hidden;
+        height: 300px;
+        background-color:rgb(222, 179, 222);  
+    }
+
+
+    .ftbox{
+        text-align: center;
+        float:none;
+    }
+
+    .fbox>img{
+        
+        text-align: center;
+        float:none;
+        margin:auto;
+        margin-bottom: 30px;
+    }
+    
+
+}
