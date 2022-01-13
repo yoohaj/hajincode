@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("*").css({
+                padding:'0',
+                margin:'0'
+            });
+
+            $("header").css({
+                width:'100%',
+                height:'100px',
+                overflow:'hidden',
+            });
+
+            $("header>a").css({
+                margin:'30px',
+                float:'left'
+            });
+            $("nav").css({
+                float:'right',
+                textAlign:'center',
+                overflow:'hidden',
+                   
+            });
+
+            $("nav>a").css({
+                margin:'30px',
+                float:'right',
+                borderLeft:'1px solid #333',
+            });
+
+            $("nav img").css({
+                marginLeft:'10px'
+            });
+
+            $("nav p").css({
+                display:'inline-block',
+                color:'#333',
+                float:'left',
+                lineHeight:'100px',
+                height:'30px',
+                margin:'30px0'
+            });
+
+
+            $("#main").css({
+                width:'1200px',
+                overflow:'hidden',
+                margin:'200px auto',
+                
+            });
+
+            $("#main p").css({
+                display:'block',
+                width:'2px',
+                height:'400px',
+                borderLeft:'1px solid #333',
+                float:'left',
+                margin:'200px',
+                marginBottom:'0'
+               
+            });
+
+            $('#main>img').css({
+                display:'block',
+                float:'left'
+            });
+
+            $('.title').css({
+                float:'right',
+            });
+
+            $('.title img').css({
+                display:'block',
+                marginLeft:'30px',
+                float:'right'
+            });
+            /////////////////////
+        });
+          
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="#"><img src="h_menu.png"></a>
+        <nav>
+            <p>gnb 메뉴 열기예약문의 033.673.9900</p>
+            <a href="#"><img src="h_icon.png"></a>
+        </nav>
+    </header>
+    <!--//header-->
+
+    <!--main-->
+    <div id="main">
+        <img src="bg.jpg" alt="">
+        <p><!--선표현--></p>
+        <div class="title">
+            <img src="index_sec2_tit01.png" alt="">
+            <img src="index_sec2_txt01.png" alt="">
+            <img src="index_sec2_txt02.png" alt="">
+        </div>
+    </div>
+    <!--//main-->
+</body>
+</html>
