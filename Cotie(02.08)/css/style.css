@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+
+*{
+    padding:0; 
+    margin:0;
+    font-family:'Noto Sans KR', sans-serif;
+}
+a{text-decoration: none;color:inherit;}
+li{list-style: none;}
+img{display:block;}
+body{background-color: #f0ede6; color:#333;}
+
+
+/*header*/
+header{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:99;
+}
+header>a{
+    float:left;
+    width: 250px;
+    margin: 39px;
+}
+header>a img{
+    margin:auto;
+}
+header ul{
+    float:right;
+    overflow: hidden;
+    margin-right: 40px;
+}
+header li{
+    float:left;
+    line-height: 150px;
+    margin-left:40px;
+    font-size: 26px;
+    font-weight: 900;
+}
+header li:nth-child(6){
+    margin-left:100px;
+}
+header li:nth-child(6) img{
+    margin-top:60px;
+}
+header li:nth-child(7){
+    margin-left:7px;
+}
+header li:nth-child(8) img{
+    margin-top:59px;
+}
+
+/*addClass - scroll이벤트로 특정 스크를 기점 이후 변화할 스타일*/
+.hedbtm{
+    background-color: #f0ede6;
+    border-bottom:1px solid #333;
+}
+
+/*wrap*/
+#wrap{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+}
+.poimg>img{
+    transition: all 0.5s;
+    transform-origin:center; /*변형시 중심 변경*/
+}
+.poimg>img:nth-child(1){
+    position: absolute;
+    top:50px;
+    left:31%;
+}
+.poimg>img:nth-child(2){
+    position: absolute;
+    top:600px;
+    right:3%;
+}
+.poimg>img:nth-child(3){
+    position: absolute;
+    top:550px;
+    left:6%;
+}
+
+/*반응선택자 응용*/
+.poimg>img:nth-child(1):hover{
+    transform: rotate(45deg);
+}
+.poimg>img:nth-child(2):hover{
+    transform: rotate(15deg);
+}
+.poimg>img:nth-child(3):hover{
+    transform: rotate(30deg);
+}
+
+/*main*/
+.main{
+    width: 60%;
+    margin:300px auto;
+    overflow: hidden;
+    position: relative;
+    padding:100px;
+    text-align: center;
+  
+}
+.main img{
+    margin:80px auto;
+}
+.main h1{
+    width: 100%;
+    height: 200px;
+    position:absolute; /*main이라는 부모기준
+    글자만 이미지에 겹치게 표현하기 위해 자식위치값 부여*/
+    top:0;
+    left:0;
+    font-size:120px;
+    font-weight: 900;
+}
+.main p{
+    margin-bottom:20px;
+    font-weight: 700;
+}
+.main button{
+    width: 150px;
+    padding:20px 0;
+    border:3px solid #333;
+    border-radius: 30px;
+    background-color: #f0ede6;
+    font-weight: 800;
+}
+
+/*section*/
+section{
+    width:100%;
+    overflow: hidden;
+    margin:50px 0;
+}
+section>h1{
+    font-size:80px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/*brand*/
+#brand>.contents{
+    width:80%;
+    margin:auto;
+    background-color: blue;
+}
+
+#brand>.contents>img{
+    float:left;
+}
+
+#brand .info{
+    float:right;
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+#brand .info img{
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+#brand .info h2{
+    font-size:20px;
+    font-weight: 500;
+    margin-bottom:100px;
+    line-height: 40px;
+}
+
+#brand button{
+    width: 250px;
+    padding:15px 0;
+    border:3px solid #333;
+    border-radius: 30px;
+    background-color: #f0ede6;
+    font-weight: 800;
+}
+/*mv*/
+#mv{
+    margin-bottom:200px;
+}
+#mv>.contents{
+    width: 1724px;
+    height: 862px;
+    overflow: hidden;
+    position: relative;
+}
+#mv>.contents span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+#mv>.contents a{
+    display: block;
+    width: 120px;
+    height: 120px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-60px;
+    margin-left:-60px;
+    text-align: center;
+    border:3px solid #fff;
+    border-radius: 50%;
+    line-height: 120px;
+    color:#fff;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0;
+}
+#new>.contents{
+    width: 80%;
+    margin:auto;
+    background-color: aqua;
+    
+}
+#new .con{
+    width: 31.3%;/*6%제외 3등분*/
+    height: 780px;
+    float:left;
+    margin-right:3%;
+}
+#new .con:last-child{
+    margin-right: 0;
+}
